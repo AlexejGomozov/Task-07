@@ -6,25 +6,26 @@ package by.htp.arraysofarrays.logic;
  *    one unit in one line, and display it. */
 
 
-public class Task01 {
+ public class Task01 {
 
 	public static void main(String[] args) {
 		
 		int[][] firstArraysOfArrays = new int [3][4];
 		
-		for(int i = 0; i< firstArraysOfArrays.length; i++) {
+		     for(int i = 0; i< firstArraysOfArrays.length; i++) {
 			
-			for(int j = 0; j< firstArraysOfArrays[i].length; j++) {
+			   for(int j = 0; j< firstArraysOfArrays[i].length; j++) {
 				
 				firstArraysOfArrays[i][j] = 0;
 				
-				firstArraysOfArrays[i][firstArraysOfArrays[i].length - 1 -i] = 1;
+				     firstArraysOfArrays[i][firstArraysOfArrays[i].length - 1 -i] = 1;
 								
-				System.out.print(firstArraysOfArrays[i][j] + ""); //(Arrays.toString(firstArraysOfArrays));								
-			}
-			System.out.println();
-		}
-		
-	}
-	
-}
+				           System.out.print(firstArraysOfArrays[i][j] + ""); //(Arrays.toString(firstArraysOfArrays));								
+			                      }
+			                        System.out.println();
+		      				   }		
+							}	
+						             }
+             							//0001
+								//0010
+								//0100

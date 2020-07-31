@@ -9,13 +9,17 @@ public class Task03 {
 		
 		int [][] matrixFirstLast = new int [4][6];
 		
-		for(int i = 0; i< matrixFirstLast.length; i++) {
+		     for(int i = 0; i< matrixFirstLast.length; i++) {
 		
-		for (int j = 0; j < matrixFirstLast[i].length; j = j + (matrixFirstLast[i].length-1)) {
+		           for (int j = 0; j < matrixFirstLast[i].length; j = j + (matrixFirstLast[i].length-1)) {
 		
-			System.out.print(matrixFirstLast[i][j] + " ");						
-	}		
-		System.out.println();
-}
-}
-}
+			        System.out.print(matrixFirstLast[i][j] + " ");						
+	                           }		
+		                      System.out.println();
+         				}
+					     }
+						}
+//0 0 
+//0 0 
+//0 0 
+//0 0 

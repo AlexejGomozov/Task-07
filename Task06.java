@@ -1,6 +1,6 @@
 package by.htp.arraysofarrays.logic;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 /* Дана матрица. Вывести на экран все нечетные столбцы, у которых первый элемент больше последнего. 
    A matrix is given. Display all odd columns with the first item greater than the last.  */

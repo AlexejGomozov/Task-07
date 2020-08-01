@@ -7,37 +7,41 @@ package by.htp.arraysofarrays.logic;
 
 public class Task08 {
 
-	public static void main(String[]rgs) {
+  public static void main(String[]rgs) {
 		
-		int n = 4;
+    int n = 4;
 		
-		int m = 7;
+       int m = 7;
 		
-		int count = 0;
+          int count = 0;
 		
-		int [][] occurs7 = new int[n][m];
+             int [][] occurs7 = new int[n][m];
 		
-		for(int i = 0; i< n; i++) {
+	        for(int i = 0; i< n; i++) {
 			
-			for( int j= 0; j< m; j++) {
+		   for( int j= 0; j< m; j++) {
 				
-				occurs7[i][j] = (int)(Math.random()*7 + 1);
+		       occurs7[i][j] = (int)(Math.random()*7 + 1);                //случайное число от 1 до 7 , включительно
 				
-				System.out.print(occurs7[i][j] + " ");
-			}
-			System.out.println();
-		}
-		System.out.println("____________________________________________");
+			  System.out.print(occurs7[i][j] + " ");
+			    }
+			    System.out.println();
+		              }
+		               System.out.println("____________________________________________");
 		
-		for(int i = 0; i< n; i++) {
+		                  for(int i = 0; i< n; i++) {
 			
-			for(int j = 0; j< m; j++) {
+			             for(int j = 0; j< m; j++) {
 				
-				if(occurs7[i][j] == (7)) count++;
-			}
-		}
-		System.out.println("в массиве occurs7 , 7-ка встречается "+ count+ " раз/a");
-	}
-	
-	
-}
+				        if(occurs7[i][j] == (7)) count++;
+			                  }
+		                            }
+		                            System.out.println("в массиве occurs7 , 7-ка встречается "+ count+ " раз/a");
+	                                      }	
+                                                }
+//4 3 3 1 5 6 1 
+//6 6 1 4 2 3 4 
+//5 7 6 7 5 5 1 
+//6 3 4 1 3 5 1 
+//____________________________________________
+//в массиве occurs7 , 7-ка встречается 2 раз/a

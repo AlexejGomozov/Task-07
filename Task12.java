@@ -4,40 +4,40 @@ package by.htp.arraysofarrays.logic;
  * Get a square matrix of order n: so that the diagonal is 0, 1, 2, .... n-1. The rest are zeros.*/ 
 
 
-public class Task12 {
+   public class Task12 {
 
 	public static void main(String[]args) {
 		
-		int n = 6;
+	    int n = 6;
 					
-		  int c = 0;
+		int c = 0;
 		
 		    int[][]diagonal = new int [n][n];
 		
 		       for(int i = 0; i< n; i++) {
 			
-			      for(int j = 0; j< n; j++) {
+			   for(int j = 0; j< n; j++) {
 				
-				    diagonal[i][j] = 0;
+		               diagonal[i][j] = 0;
 				
-				      System.out.print(diagonal[i][j] + " ");  			 		
+				  System.out.print(diagonal[i][j] + " ");  			 		
 			            }
-			            System.out.println();
-		                  }
-		                   System.out.println("___________");
+			              System.out.println();
+		                        }
+		                          System.out.println("___________");
 		
-                             for(int i = 0; i< n; i++) {
+                                             for(int i = 0; i< n; i++) {
 			
-			                    for(int j = 0; j< n; j++) {
+			                         for(int j = 0; j< n; j++) {
 				
-				                   if(i == j)  System.out.print(c++   + " "); 
+				                    if(i == j)  System.out.print(c++   + " "); 
 				                   
-				                     else  System.out.print(0   + " "); 			
-			                          }
-			                            System.out.println();
-                             			  }
-											}	
-											  }
+				                       else  System.out.print(0   + " "); 			
+			                                 }
+			                                   System.out.println();
+                             			              }
+								}	
+								  }
 //0 0 0 0 0 0 
 //0 0 0 0 0 0 
 //0 0 0 0 0 0 

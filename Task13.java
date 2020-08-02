@@ -8,32 +8,32 @@ package by.htp.arraysofarrays.logic;
 
 public class Task13 {
 	
-	public static void main(String[]args) {
+   public static void main(String[]args) {
 			
-		int n = 6;
+      int n = 6;
 						
-			int c = 0;
+	 int c = 0;
 			
-			    int[][]reverseLines = new int [n][n];
+	     int[][]reverseLines = new int [n][n];
 			
-			       for(int i = 0; i< n; i++) {
+	        for(int i = 0; i< n; i++) {
 			    	   
-				     c = 0;
+		   c = 0;
 				
-				      for(int j = 0; j< n; j++) {
+		      for(int j = 0; j< n; j++) {
 					
-				    	if(i==0 | i%2==0)  { reverseLines[i][j] = c + 1; c++;
+		         if(i==0 | i%2==0)  { reverseLines[i][j] = c + 1; c++;
 					
-					      System.out.print(reverseLines[i][j] + " ");  }
+			    System.out.print(reverseLines[i][j] + " ");  }
 					      
-				    	     else {reverseLines[i][j] = n  - c; c++;
+				 else {reverseLines[i][j] = n  - c; c++;
 				    	
-				    	    	System.out.print(reverseLines[i][j] + " "); }
-				                  }
-				                   System.out.println();
-			                         }		                  
-									   }	
-									    }
+				    System.out.print(reverseLines[i][j] + " "); }
+				      }
+				        System.out.println();
+			                  }		                  
+		                            }	
+	                                      }
 
 //1 2 3 4 5 6 
 //6 5 4 3 2 1 

@@ -7,38 +7,38 @@ package by.htp.arraysofarrays.logic;
 
 public class Task11 {
 
-	public static void main(String[]args) {
+   public static void main(String[]args) {
 		
-		int x = 7;
+	int x = 7;
 		
-		   int y = 5;
+            int y = 5;
 		
-		      int [][] rightLeft = new int [x][y];
+	        int [][] rightLeft = new int [x][y];
 		
-		          for (int i = 0; i< x; i++) {
+		    for (int i = 0; i< x; i++) {
 			
-			         for(int j = 0; j< y; j++) {
+			for(int j = 0; j< y; j++) {
 				
-				        rightLeft[i][j] = (int)(Math.random()*10 + 1);
+		           rightLeft[i][j] = (int)(Math.random()*10 + 1);
 				
-				           System.out.print(rightLeft[i][j] + " " );			
-			                 }
-			                  System.out.println();
+				System.out.print(rightLeft[i][j] + " " );			
+			           }
+			             System.out.println();
 		                       }
 		                        System.out.println("_______________");
 		
-                                  for (int i = 0; i< x; i++) {
+                                           for (int i = 0; i< x; i++) {
 			
-			                         for(int j = 0; j< y; j++) {
+			                       for(int j = 0; j< y; j++) {
 											
-				                        if(i==0 | i%2==0)  System.out.print(rightLeft[i][j] + " " );
+				                   if(i==0 | i%2==0)  System.out.print(rightLeft[i][j] + " " );
 				     
-				                         if (i%2 !=0) System.out.print(rightLeft[i][y - 1 - j] + " " );			
-			                               }
-			                               System.out.println();					
-	                                         }
-                                               }
-                                                 }
+				                       if (i%2 !=0) System.out.print(rightLeft[i][y - 1 - j] + " " );			
+			                                 }
+			                                   System.out.println();					
+	                                                     }
+                                                               }
+                                                                 }
 //8 5 5 2 7 
 //4 1 5 9 7 
 //10 1 8 3 7 

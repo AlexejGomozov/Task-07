@@ -8,36 +8,37 @@ package by.htp.arraysofarrays.logic;
  *  by one is greater than the written number*/
 
 public class Task16 {
-
-	public static void main(String[]args) {
-		int n = 6;
+	
+  public static void main(String[]args) {
+	  
+     int n = 6;
+		  
+	int c = 1;
 		
-		  int c = 1;
+           int[][]diagonalUpperLeftСorner = new int [n][n];
 		
-		    int[][]diagonalUpperLeftСorner = new int [n][n];
-		
-		       for(int i = 0; i< n; i++) {
+	      for(int i = 0; i< n; i++) {
 			
-			      for(int j = 0; j< n; j++) {
+	         for(int j = 0; j< n; j++) {
 							   				
-				      System.out.print(diagonalUpperLeftСorner[i][j] + " ");  			 		
-			            }
-			            System.out.println();
-		                  }
-		                   System.out.println("___________");
+		    System.out.print(diagonalUpperLeftСorner[i][j] + " ");  			 		
+		       }
+		       System.out.println();
+		          }
+		           System.out.println("___________");
 		
-                           for(int i = 0; i< n; i++) {
+                              for(int i = 0; i< n; i++) {
 			
-			                    for(int j = 0; j< n; j++) {
+			          for(int j = 0; j< n; j++) {
 				
-				                   if(i == j)  System.out.print(((c++)*(i+2))  + " "); //*(1 + (c++))
+				      if(i == j)  System.out.print(((c++)*(i+2))  + " "); 
 				                   
-				                     else  System.out.print(0   + " "); 			
-			                          }
-			                            System.out.println();
-                           			      }
-											}	
-											  }
+				         else  System.out.print(0   + " "); 			
+			                     }
+			                    System.out.println();
+                           		        }
+						   }	
+						     }
 //0 0 0 0 0 0 
 //0 0 0 0 0 0 
 //0 0 0 0 0 0 

@@ -27,29 +27,31 @@ public class Task19 {
 		                   }
 		                    System.out.println("_______________________");
 		
-		                       for(int i= 0; i< n; i++) {   
+		           for(int i= 0; i< n; i++) {   
 		    	
-			                  for(int j = 0; j< n; j++) {  
+			      for(int j = 0; j< n; j++) {  
 				  
-				             if(count < (n/2)) { 
+				if(count < (n/2)) { 
 					  
-					        if ((i == count & j<= i - 1 )|(i == count & j >= n-count)) {
+				    if ((i == count & j<= i - 1 )|(i == count & j >= n-count)) {
 						  
-						  System.out.print(0 + " ");  } else  System.out.print(1 + " ");
-					            }    		    
-				                     if(count >=(n/2)) {
+				       System.out.print(0 + " ");  } else  System.out.print(1 + " ");
+					  }    		    
+				          if(count >=(n/2)) {
 			  
-			                               if ((i == count & j <= n -2 - i) | (i == count & j >= n - (n - count-1) ))  { 
+			                     if ((i == count & j <= n -2 - i) | (i == count & j >= n - (n - count-1) ))  { 
 			                	   
-			                	          System.out.print(0 + " ");}else  System.out.print(1 + " ");	 
-			                                    }				                            
-					                      }  
-			                                        count++ ;   
+			                	 System.out.print(0 + " ");
+						   }
+						    else  System.out.print(1 + " ");	 
+			                             }				                            
+					               }  
+			                                count++ ;   
 			  
-			                                          System.out.println();
-			                                            } 
-	                                                              }
-                                                                        }
+			                                   System.out.println();
+			                                     } 
+	                                                       }
+                                                                 }
 																 
 	/*			if((i == 1 & j==0 )| (i == 1 & j == n-1)) System.out.print(0 + " "); 
 				

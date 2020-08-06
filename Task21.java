@@ -23,24 +23,24 @@ public class Task21 {
 			  System.out.print(squareDividedAlongDiagonal[i][j] + " ");
 			   }
 			    System.out.println();
-		         }
-		         System.out.println("____________________");
+		             }
+		              System.out.println("____________________");
 		         
 		
           for(int i = 0; i< n; i++) {
         	  
-			count = n - i;
+	     count = n - i;
 			
-			  for(int j = 0; j< n; j++) {
+	        for(int j = 0; j< n; j++) {
 				
-			    if( j<= i)  {System.out.print(count + " ");count++ ;}   
+	           if( j<= i)  {System.out.print(count + " ");count++ ;}   
 				
-			      else System.out.print(0 + " ");
-			       }						
-			        System.out.println();
-	              }
-                 }	
-                }
+		      else System.out.print(0 + " ");
+			}						
+			 System.out.println();
+	                }
+                      }	
+                    }
 
 //0 0 0 0 0 0 0 0 0 0 
 //0 0 0 0 0 0 0 0 0 0 

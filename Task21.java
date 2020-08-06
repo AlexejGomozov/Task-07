@@ -16,15 +16,15 @@ public class Task21 {
 		
 		int[][] squareDividedAlongDiagonal = new int[n][n];
 			
-		  for(int i = 0; i< n; i++) {
+		   for(int i = 0; i< n; i++) {
 			
-		    for(int j = 0; j< n; j++) {
+		      for(int j = 0; j< n; j++) {
 										
 			  System.out.print(squareDividedAlongDiagonal[i][j] + " ");
-			   }
-			    System.out.println();
-		             }
-		              System.out.println("____________________");
+			    }
+			      System.out.println();
+		                }
+		                  System.out.println("____________________");
 		         
 		
           for(int i = 0; i< n; i++) {
@@ -33,14 +33,18 @@ public class Task21 {
 			
 	        for(int j = 0; j< n; j++) {
 				
-	           if( j<= i)  {System.out.print(count + " ");count++ ;}   
-				
-		      else System.out.print(0 + " ");
-			}						
-			 System.out.println();
-	                }
-                      }	
-                    }
+	           if( j<= i)  {
+			   
+		      System.out.print(count + " ");
+			   
+			 count++ ;
+		          }   
+		            else System.out.print(0 + " ");
+			      }						
+			       System.out.println();
+	                      }
+                            }	
+                          }
 
 //0 0 0 0 0 0 0 0 0 0 
 //0 0 0 0 0 0 0 0 0 0 

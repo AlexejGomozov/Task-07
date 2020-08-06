@@ -9,47 +9,47 @@ package by.htp.arraysofarrays.logic;
            
 public class Task20 {
 
-	public static void main(String[]args) {
+   public static void main(String[]args) {
 		
-		int n = 10;
+      int n = 10;
 		
-		  int count = 0;
+         int count = 0;
 		
-		     int[][] lookLikesHourglass = new int [n][n];
+            int[][] lookLikesHourglass = new int [n][n];
 		
-		        for(int i = 0; i< n; i++) {
+	       for(int i = 0; i< n; i++) {
 			
-			       for(int j = 0; j< n; j++) {
+	          for(int j = 0; j< n; j++) {
 				
-				     lookLikesHourglass[i][j] = 1;
+		     lookLikesHourglass[i][j] = 1;
 				
-				        System.out.print(lookLikesHourglass[i][j] + " ");
-			             }
-			              System.out.println();
-		                   }
-		                    System.out.println("___________________");
+		        System.out.print(lookLikesHourglass[i][j] + " ");
+			  }
+			   System.out.println();
+		             }
+		              System.out.println("___________________");
 		
 				
 		  for(int i = 0; i< n; i++) {
 			
-			 for(int j = 0; j< n; j++) {
+		     for(int j = 0; j< n; j++) {
 				
-				if(count< n/2) {
+		       if(count< n/2) {
 					
-					if (i == count & j >= i +1 & j <= n - i - 2) System.out.print(0 + " "); 
+			  if (i == count & j >= i +1 & j <= n - i - 2) System.out.print(0 + " "); 
 					
-					  else System.out.print(1 + " ");
-					   } 				
-					    if(count >= n/2) {
+			     else System.out.print(1 + " ");
+			        } 				
+			        if(count >= n/2) {
 						
-						  if( i == count & j >= (n-count)  & j <= (n - (n - count +1)))  System.out.print(0 + " "); 
+				   if( i == count & j >= (n-count)  & j <= (n - (n - count +1)))  System.out.print(0 + " "); 
 						
-						    else System.out.print(1 + " ");
-						     } 				
-			                  }
-			                   count++;
+				     else System.out.print(1 + " ");
+				       } 				
+			                 }
+			                  count++;
 			
-			                     System.out.println();
+			                    System.out.println();
 		                     }		
 	                        }
                            }
@@ -68,7 +68,7 @@ public class Task20 {
 //1 1 0 0 0 0 0 0 1 1 
 //1 1 1 0 0 0 0 1 1 1 
 //1 1 1 1 0 0 1 1 1 1 
-//1 1 1 1 1 1 1 1 1 1 
+//1 1 1 1 1 1 1 1 1 1        -doesn't it look like an hourglass? ;)
 //1 1 1 1 1 1 1 1 1 1 
 //1 1 1 1 0 0 1 1 1 1 
 //1 1 1 0 0 0 0 1 1 1 

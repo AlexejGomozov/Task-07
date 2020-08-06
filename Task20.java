@@ -5,7 +5,7 @@ package by.htp.arraysofarrays.logic;
  *  и "последняя") с каждой строкой "0" меньше с обеих сторон, слева  и справа .  (except for the cells "first" and "last") with each row "0" less on 
  *  И так до середины матрицы( таким образом, что это напоминает песочные часы).   both sides, left and right . And so on until the middle of the matrix 
  *  Потом от середины идет обратное увеличение "0".  В остальных ячейках "1".      (in such a way that it look likes an hourglass). Then from the middle 
-                                  											     	there is a reverse increase of "0". The rest of the cells are "1". */ 
+                                  					           there is a reverse increase of "0". The rest of the cells are "1". */ 
            
 public class Task20 {
 

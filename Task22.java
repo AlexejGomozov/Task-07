@@ -6,9 +6,9 @@ package by.htp.arraysofarrays.logic;
  * строке справа, счет начинается со следующего по порядку числа и заканчивается   down. With each cell in the row to the right, counting starts at the next 
  * на диагонали числом n.  														   in order and ends on the diagonal with n. */
 
-  public class Task22 {
+        public class Task22 {
 
-	 public static void main(String[] args) {
+	    public static void main(String[] args) {
 		
 		int n = 8;
 		
@@ -16,33 +16,33 @@ package by.htp.arraysofarrays.logic;
 		
 		     for(int i = 0; i< n; i++) {
 			
-			   for(int j = 0; j< n; j++) {
+			 for(int j = 0; j< n; j++) {
 				
-				 System.out.print(squareDividedAlongDiagonalVerticallyDown[i][j] + " ");
+		            System.out.print(squareDividedAlongDiagonalVerticallyDown[i][j] + " ");
 			      }
 			       System.out.println();
-		            }
-		             System.out.println("_______________");
+		                 }
+		                  System.out.println("_______________");
 		
 		
        for(int i = 0; i< n; i++) {
 			
     	  int count = i + 1;
     	  
-			for(int j = 0; j< n; j++) {
+	    for(int j = 0; j< n; j++) {
 				
-			   if(i <= n-j-1)	{
+	      if(i <= n-j-1)	{
 				
-				 System.out.print(count + " ");
+		 System.out.print(count + " ");
 				
-				   count++;
-				    }			
-			         else System.out.print(0 + " ");
-			           }
-			           System.out.println();		
+		    count++;
+		      }			
+		       else System.out.print(0 + " ");
+			 }
+			  System.out.println();		
 	                }	
-                  }
-                }
+                      }
+                    }
   //0 0 0 0 0 0 0 0 
   //0 0 0 0 0 0 0 0 
   //0 0 0 0 0 0 0 0 

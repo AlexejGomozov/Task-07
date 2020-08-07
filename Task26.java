@@ -1,12 +1,10 @@
 package by.htp.arraysofarrays.logic;
 
-import java.util.Arrays;
-
-/*  С клавиатуры вводится двумерный массив чисел размерностью nxm.    			  A two-dimensional array of numbers with dimension nxm is entered 
- *  Выполнить с массивом следующие действия:									  from the keyboard. Perform the following actions with the array:
+/*  С клавиатуры вводится двумерный массив чисел размерностью nxm.    	          A two-dimensional array of numbers with dimension nxm is entered 
+    Выполнить с массивом следующие действия:				          from the keyboard. Perform the following actions with the array:
    а) вычислить сумму отрицательных элементов в каждой строке;                    a) calculate the sum of negative elements in each line;
    б) определить максимальный элемент в каждой строке;                            b) determine the maximum element in each line;	
-   в) переставить местами максимальный и минимальный элементы матрицы.			  c) rearrange the places of the maximum and minimum elements of the matrix.*/
+   в) переставить местами максимальный и минимальный элементы матрицы.	          c) rearrange the places of the maximum and minimum elements of the matrix. */
  																										  	
 
 public class Task26 {

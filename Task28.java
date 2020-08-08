@@ -4,43 +4,43 @@ package by.htp.arraysofarrays.logic;
  *  Определить, какой столбец содержит максимальную сумму.                             Determine which column contains the maximum amount.  */
 
 public class Task28 {
-
-	public static void main(String[]args) {
+	
+ public static void main(String[]args) {
 		
-		int n = 5;
+  int n = 5;
 		
-		int count = 0;
+   int count = 0;
 		
-		int[][] columnContainsMaximumAmount = new int[n][n];
+    int[][] columnContainsMaximumAmount = new int[n][n];
 		
-		for(int i = 0; i< n; i++) {
+     for(int i = 0; i< n; i++) {
 			
-			for(int j = 0; j< n; j++) {
+      for(int j = 0; j< n; j++) {
 				
-				columnContainsMaximumAmount[i][j] = (int)(Math.random()*10);
+	columnContainsMaximumAmount[i][j] = (int)(Math.random()*10);
 			
-				System.out.print(columnContainsMaximumAmount[i][j] + " ");
-		}
-			System.out.println();
-	}
-		System.out.println("_________");
+	 System.out.print(columnContainsMaximumAmount[i][j] + " ");
+	   }
+	   System.out.println();
+	    }
+	    System.out.println("_________");
 		
-         for(int j = 0; j< n; j++) {                      //поменял местами for(i) и  for(j), чтобы считало сумму столбцов
+              for(int j = 0; j< n; j++) {                      //поменял местами for(i) и  for(j), чтобы считало сумму столбцов
 			        	
         	int sum = 0;
         	
         	 for(int i = 0; i< n; i++) {
 				
-				if(columnContainsMaximumAmount[i][j] == columnContainsMaximumAmount[i][count]) sum = columnContainsMaximumAmount[i][j] + sum; 			
-		}
-        	 System.out.print("sum" + j + " = " + sum);
+		   if(columnContainsMaximumAmount[i][j] == columnContainsMaximumAmount[i][count]) sum = columnContainsMaximumAmount[i][j] + sum; 			
+		    }
+        	    System.out.print("sum" + j + " = " + sum);
         	 
-        	 count++;
+        	     count++;
         	 
-			System.out.println();
-	}		
-}
-}
+		      System.out.println();
+	            }		
+                  }
+               }
 //9 3 6 0 4 
 //1 9 9 9 2 
 //0 5 9 1 7 

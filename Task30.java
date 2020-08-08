@@ -5,44 +5,41 @@ package by.htp.arraysofarrays.logic;
 
 public class Task30 {
 
-	public static void main(String[]args) {
+  public static void main(String[]args) {
 		
-		int n = 10;
+    int n = 10;
 		
-		int m = 20;
+      int m = 20;
 		
-		int count1 = 0;                      //два счетчика 1 считает строки чтобы в каждой искать повторяющие 5ки
+        int count1 = 0;                                  //два счетчика 1 считает строки чтобы в каждой искать повторяющие 5ки
 		
-		int count2;                          //2й счетчик считает количество 5к в строке
+	   int count2;                                   //2й счетчик считает количество 5к в строке
 		
-		int [][]occursThreeTimes = new int[n][m];
+	     int [][]occursThreeTimes = new int[n][m];
 		
-		for(int i = 0; i< n; i++) {
+	       for(int i = 0; i< n; i++) {
 			
-			for(int j = 0; j< m; j++) {
+		 for(int j = 0; j< m; j++) {
 				
-				occursThreeTimes[i][j] = (int)(Math.random()*16);
+		    occursThreeTimes[i][j] = (int)(Math.random()*16);
 				
-				System.out.print(occursThreeTimes[i][j] + " ");
-			}
-			System.out.println();
-		}
-		System.out.println("__________________________________________________");
+		     System.out.print(occursThreeTimes[i][j] + " ");
+		      }
+		      System.out.println();
+		       }
+		       System.out.println("__________________________________________________");
 		
-   for(int i = 0; i< n; i++) {
+      for(int i = 0; i< n; i++) {
 	   
-	     count2 = 0;                            //каждый раз с переходом на новую строку count2 обнуляется 
+        count2 = 0;                                      //каждый раз с переходом на новую строку count2 обнуляется 
 	     
-			for(int j = 0; j< m; j++) {
+	   for(int j = 0; j< m; j++) {
 				
-				if(i == count1 & occursThreeTimes[i][j] == 5) count2++; 
-																			
-			}
-			if(count2 >= 3) System.out.println("В строке " + i + ", встречаются 5-ки, три или более раз.");
+	     if(i == count1 & occursThreeTimes[i][j] == 5) count2++; 																			
+		}
+	        if(count2 >= 3) System.out.println("В строке " + i + ", встречаются 5-ки, три или более раз.");
 			
-			count1++;                          //count1 увеличивается каждый for(i)
-			
-			//System.out.println();
+		  count1++;                             //count1 увеличивается каждый for(i)					
 		}
 	}
 }

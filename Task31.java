@@ -5,40 +5,40 @@ package by.htp.arraysofarrays.logic;
 
 public class Task31 {
 
-	public static void main(String[]args) {
+   public static void main(String[]args) {
 		
-		int n = 100;
+     int n = 100;
 		
-		int m = 10;
+        int m = 10;
 		
-		int count1 = 0;  //два счетчика. определяет элементы матрицы, второй - сколько 2значных чисел в массиве
+	   int count1 = 0;  //два счетчика. определяет элементы матрицы, второй - сколько 2значных чисел в массиве
 		
-		int count2 = 0;
+	      int count2 = 0;
 		
 		int[][]arrayThousand = new int[n][m];
 		
-		for(int i = 0; i< n; i++) {
+		  for(int i = 0; i< n; i++) {
 			
-			for(int j = 0; j< m; j++) {
+		     for(int j = 0; j< m; j++) {
 				
-				arrayThousand[i][j] = count1++;
+			arrayThousand[i][j] = count1++;
 				
-				System.out.print(arrayThousand[i][j]  + " ");
-			}
-			System.out.println();
-		}
-		 System.out.println("________________________________________");
+			  System.out.print(arrayThousand[i][j]  + " ");
+			    }
+			     System.out.println();
+		               }
+		                System.out.println("________________________________________");
 		
-         for(int i = 0; i< n; i++) {
+           for(int i = 0; i< n; i++) {
 			
-			for(int j = 0; j< m; j++) {
+	      for(int j = 0; j< m; j++) {
 				
-			if((double)arrayThousand[i][j] /10 >= 1 & (double)arrayThousand[i][j] /10 < 10 ) count2++;	
-			}			
-		}        
-         System.out.print(count2);
-	}
-}
+	         if((double)arrayThousand[i][j] /10 >= 1 & (double)arrayThousand[i][j] /10 < 10 ) count2++;	
+		   }			
+		     }        
+                      System.out.print(count2);
+	             }
+                   }
 //0 1 2 3 4 5 6 7 8 9 
 //10 11 12 13 14 15 16 17 18 19 
 //20 21 22 23 24 25 26 27 28 29 

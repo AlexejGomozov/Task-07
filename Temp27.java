@@ -12,52 +12,52 @@ public class Temp27 {
 		
    Scanner sc = new Scanner(System.in);
 		
-     System.out.println("Введите номера столбцов матрицы для замены");
+	 System.out.println("Введите номера столбцов матрицы для замены");
 		
-      int v = sc.nextInt();                            //вводим номер столбца для замены
+	   int v = sc.nextInt();                            //вводим номер столбца для замены
 		
-       int g = sc.nextInt();                            //вводим номер столбца для замены
+		 int g = sc.nextInt();                            //вводим номер столбца для замены
 			
-        System.out.println("v = "+ v);
+		  System.out.println("v = "+ v);
 		
-         System.out.println("g = "+ g);
+		   System.out.println("g = "+ g);
 		
-          System.out.println("Поменять элементы столбцa - " + v + " , на элементы столбца - " + g);
+		    System.out.println("Поменять элементы столбцa - " + v + " , на элементы столбца - " + g);
 		
-	   sc.close();
+		     sc.close();
 		
-	    int n = 7;       				//размер квадрата (матрыцы)
+		 int n = 7;
 		
-	     int temp;                                  //переменная временная для замены двух столбцов
+		  int temp;
 		
-	      int[][]swapTwoColumns = new int[n][n];
+		   int[][]swapTwoColumns = new int[n][n];
 		
-		for(int i = 0; i< n; i++) {
+		    for(int i = 0; i< n; i++) {
 			
-	         for(int j = 0; j< n; j++) {
+			 for(int j = 0; j< n; j++) {
 				
-	          swapTwoColumns[i][j] = (int)(Math.random()*10);      //заполняем матрицу
+			  swapTwoColumns[i][j] = (int)(Math.random()*10);      //заполняем матрицк
 				
-		    System.out.print(swapTwoColumns[i][j] + " ");			
-		      }
-		     System.out.println();
-		       }
-		       System.out.println("_______________");
+			   System.out.print(swapTwoColumns[i][j] + " ");			
+			    }
+			    System.out.println();
+		         }
+		         System.out.println("_______________");
 		
                   for(int i = 0; i< n; i++) {
 			
-	           for(int j = 0; j< n; j++) {
+			       for(int j = 0; j< n; j++) {
 				
-		    if(swapTwoColumns[i][j] == swapTwoColumns[i][v])  	
-	              {
-		     temp = swapTwoColumns[i][v];  swapTwoColumns[i][v] = swapTwoColumns[i][g]; swapTwoColumns[i][g] = temp;
-		       }
-	   	      System.out.print(swapTwoColumns[i][j] + " ");			
-			}
-		       System.out.println();
+				    if(swapTwoColumns[i][j] == swapTwoColumns[i][v])  	
+	                 {
+				     temp = swapTwoColumns[i][v];  swapTwoColumns[i][v] = swapTwoColumns[i][g]; swapTwoColumns[i][g] = temp;
+				      }
+	   		          System.out.print(swapTwoColumns[i][j] + " ");			
+			           }
+			           System.out.println();
                        }		
-	             }	
-                   }
+	                  }	
+                     }
 //Введите номера столбцов матрицы для замены
 //3
 //4

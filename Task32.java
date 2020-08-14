@@ -37,9 +37,9 @@ public class Task32 {
                                 	
                            boolean sort = false;
                            		 
-                           	  int temp;                                           						   //???????????????
+                               int temp;                                           						   //???????????????
                            		 
-                           		  while(!sort) {
+                           	  while(!sort) {
                            			 
                            			sort = true;
                         			
@@ -64,7 +64,7 @@ public class Task32 {
                                 }              */                                            								  //???????????????
                                 
                                 
-		   public int get(int i, int j) {                                                              //возвратный метод создания одномерго массива для печатания
+		   public int get(int i, int j) {                                                                      //возвратный метод создания одномерго массива для печатания
 			
 			 return oneArray[(i)*n + j];
 		           }		          		 
@@ -83,17 +83,17 @@ public class Task32 {
 		        						}
 		      					   }		
 		
-	     public void printMatrix() {          															//печатаем двумерный массив
+	          public void printMatrix() {          															//печатаем двумерный массив
 			
 			System.out.println("Matrix " + ": ");
 			
-              for(int i = 0; i< n; i++) {
+                               for(int i = 0; i< n; i++) {
 				
-				for(int j = 0; j< n; j++) {
+				    for(int j = 0; j< n; j++) {
 					
 					System.out.print(matrix[i][j] + " ");
-				      }
-				       System.out.println();
+				         }
+				            System.out.println();
 				}
 		}
 		
@@ -101,23 +101,23 @@ public class Task32 {
 			
 			System.out.println("Array " + ": ");
 			
-               for(int i = 0; i< n; i++) {
+             			  for(int i = 0; i< n; i++) {
 				
-				for(int j = 0; j< n; j++) {
+					for(int j = 0; j< n; j++) {
 					
-					System.out.print(get(i, j) + " ");					
+						System.out.print(get(i, j) + " ");					
 		 }	
 	 }
  }			
-	               	public void printSortArray(){                                                      //печатаем. метод сортировки одномерного массива (используем метода sort() из класса Arrays.)
+	           public void printSortArray(){                                                      //печатаем. метод сортировки одномерного массива (используем метода sort() из класса Arrays.)
 	               		
-	               		Arrays.sort(oneArray);
+	               Arrays.sort(oneArray);
 	               		
-	               		  System.out.println("SortArray " + " : ");
+	               	  System.out.println("SortArray " + " : ");
 	               		
-	               		     for(int i = 0; i <  oneArray.length; i++) {
+	               	      for(int i = 0; i <  oneArray.length; i++) {
 	               		    	 
-	               			     System.out.print(oneArray[i] + " ");
+	               	        System.out.print(oneArray[i] + " ");
 	               	  }
 	               }	               			               		
 	               		         

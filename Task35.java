@@ -4,43 +4,42 @@ package by.htp.arraysofarrays.logic;
 
 public class Task35 {
 
-	public static void main(String[]args) {
+  public static void main(String[]args) {
 		
-		int n = 5;
+     int n = 5;
 		
-		int[][]largElMatReplOddEl = new int[n][n];
+        int[][]largElMatReplOddEl = new int[n][n];
 		
-		int max = largElMatReplOddEl[0][0];             //max определяем здесь, чтобы max определилось 
-		 												//на всю матрицу и замена произошла по всей матрицы
+	    int max = largElMatReplOddEl[0][0];            						   //max определяем здесь, чтобы max определилось 
+		 											   //на всю матрицу и замена произошла по всей матрицы
 		for(int i = 0; i< n; i++) {
 			
 			for(int j = 0; j< n; j++) {
 				
-				largElMatReplOddEl[i][j] = (int)(Math.random()*26);
+			   largElMatReplOddEl[i][j] = (int)(Math.random()*26);
 				
 				if(largElMatReplOddEl[i][j]> max) max = largElMatReplOddEl[i][j];
-				
-				
-				System.out.print(largElMatReplOddEl[i][j] + " ");
-			}
-			System.out.println();
-		}
-		System.out.println("_____________");
+							
+				  System.out.print(largElMatReplOddEl[i][j] + " ");
+			             }
+			              System.out.println();
+		                        }
+		                         System.out.println("_____________");
 		
 		
             for(int i = 0; i< n; i++) {
 			
-			for(int j = 0; j< n; j++) {
+	         for(int j = 0; j< n; j++) {
 				
-				if(largElMatReplOddEl[i][j]%2 != 0) largElMatReplOddEl[i][j] = max;
+		      if(largElMatReplOddEl[i][j]%2 != 0) largElMatReplOddEl[i][j] = max;
 				
-				System.out.print(largElMatReplOddEl[i][j] + " ");
-			}
-			System.out.println();			
-		}
-            System.out.println("max = " + max);
-	}	
-}
+			  System.out.print(largElMatReplOddEl[i][j] + " ");
+			     }
+			      System.out.println();			
+		                }
+                                 System.out.println("max = " + max);
+	                     }	
+                          }
 //11 9 23 22 24 
 //16 6 4 23 13 
 //18 4 18 12 3 

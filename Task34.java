@@ -5,32 +5,34 @@ package by.htp.arraysofarrays.logic;
 
 public class Task34 {
 
-	public static void main(String[]args) {
+  public static void main(String[]args) {
 		
-		int n = 7;
+     int n = 7;
 		
-		int m = 8;		
+        int m = 8;		
 		
-		int [][]onesColumnNumber = new int [n][m];
+	  int [][]onesColumnNumber = new int [n][m];
 		
-       for(int i = 0; i< n; i++) {
+             for(int i = 0; i< n; i++) {
 			
-			for(int j = 0; j < m; j++) {
-				System.out.print(onesColumnNumber[i][j] + " ");
+	        for(int j = 0; j < m; j++) {
+			
+		   System.out.print(onesColumnNumber[i][j] + " ");
 			}
 			System.out.println();
-       }
-       System.out.println("_______________");
+                          }
+                           System.out.println("_______________");
        
+	  
        for(int i = 0; i< n; i++) {
 			
-			for(int j = 0; j < m; j++) {
+	  for(int j = 0; j < m; j++) {
 							
-				if( (i+1) <= j ) onesColumnNumber[i][j] = 1;     //печатает 1 когда j>= (i + 1)
+	     if( (i+1) <= j ) onesColumnNumber[i][j] = 1;     //печатает 1 когда j>= (i + 1)
 				
-				System.out.print(onesColumnNumber[i][j] + " ");
-			}			
-			System.out.println();
+		 System.out.print(onesColumnNumber[i][j] + " ");
+		    }			
+		     System.out.println();
 		}	
 	}	
 }

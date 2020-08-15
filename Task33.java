@@ -4,57 +4,57 @@ package by.htp.arraysofarrays.logic;
 
 public class Task33 {
 
-	public static void main(String[]args) {
+   public static void main(String[]args) {
 		
-int n = 10;
+     int n = 10;
 		
 	int [][] matrixAscendingDescendingOrder = new int[n][n];
 		
-		for(int i = 0; i< n; i++) {
+           for(int i = 0; i< n; i++) {
 			
-			for(int j = 0; j< n; j++) {
+	       for(int j = 0; j< n; j++) {
 				
-				matrixAscendingDescendingOrder[i][j] = (int)(Math.random()*51);
+		  matrixAscendingDescendingOrder[i][j] = (int)(Math.random()*51);
 				
-				  System.out.print(matrixAscendingDescendingOrder[i][j] + " ");				
-			       }
-			         System.out.println();
+		     System.out.print(matrixAscendingDescendingOrder[i][j] + " ");				
+		       }
+			System.out.println();
 		}
 		
 		boolean flag = true;
 		
-		 int temp;                                                                            //замена елементов
+		  int temp;                                                                                     //временная переменная для замены елементов
 		
-		  while(flag) {
+		    while(flag) {
 			
-			flag = false;
+		      flag = false;
 			 
-			  for (int b = 0; b<matrixAscendingDescendingOrder.length; b++ ) {
+			 for (int b = 0; b<matrixAscendingDescendingOrder.length; b++ ) {
 				
 			   for(int k = 0; k< matrixAscendingDescendingOrder[b].length- 1; k++ ) {				
 				
-				  if (matrixAscendingDescendingOrder[k][b]> matrixAscendingDescendingOrder[k+1][b]) {
+			      if (matrixAscendingDescendingOrder[k][b]> matrixAscendingDescendingOrder[k+1][b]) {
 					
-					temp = matrixAscendingDescendingOrder[k][b];                                     //замена елементов
+				 temp = matrixAscendingDescendingOrder[k][b];                                     //замена елементов
 					
-					  matrixAscendingDescendingOrder[k][b] = matrixAscendingDescendingOrder[k+1][b];
+				    matrixAscendingDescendingOrder[k][b] = matrixAscendingDescendingOrder[k+1][b];
 					
-					    matrixAscendingDescendingOrder[k+1][b] = temp;
+				      matrixAscendingDescendingOrder[k+1][b] = temp;
 					
-					      flag = true;
+					flag = true;
 				}
 			}
 		}
 	}		
 		System.out.println("_______________________________________________");
 		
-           for(int i = 0; i< n; i++) {
+                    for(int i = 0; i< n; i++) {
 			
 			  for(int j = 0; j< n; j++) {
 				
-				System.out.print(matrixAscendingDescendingOrder[i][j] + "   ");				
-			      }
-			       System.out.println();
+			      System.out.print(matrixAscendingDescendingOrder[i][j] + "   ");				
+			        }
+			          System.out.println();
 		}
 	}
 }

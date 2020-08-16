@@ -25,7 +25,7 @@ public class Task38 {
 		System.out.println("___________________");
 		
 		
-   int[][] secondMatr = new int[n][m];
+           int[][] secondMatr = new int[n][m];
 		
 		for(int i =0; i< n; i++) {
 			
@@ -40,7 +40,7 @@ public class Task38 {
 		System.out.println("____________________");
 		
 		
-		 int[][] sumMatr = new int[n][m];
+		 int[][] sumMatr = new int[n][m];   							//сумма 2х матриц
 			
 			 for(int i =0; i< n; i++) {
 				

@@ -25,7 +25,7 @@ public class Task39 {
 		System.out.println("___________________");
 		
 		
-   int[][] secondMatr = new int[n][m];
+           int[][] secondMatr = new int[n][m];
 		
 		for(int i =0; i< n; i++) {
 			
@@ -46,7 +46,7 @@ public class Task39 {
 				
 				 for(int j = 0; j< productMatr[i].length; j++) {
 					
-					 productMatr[i][j] = secondMatr[i][j] * firstMatr[i][j];
+					 productMatr[i][j] = secondMatr[i][j] * firstMatr[i][j];                          //произведение 2х матриц
 					
 				 System.out.print(productMatr[i][j]+ " ");
 				}

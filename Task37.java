@@ -6,33 +6,34 @@ public class Task37 {
 
 	public static void main(String[]args) {
 		
-		 int n = 5;
+           int n = 5;
 		
-		 int count = 0;
+	      int count = 0;
 		
 		 int random;
 		
-		 int temp;
+		    int temp;
 		
-		int[][] rearrange = new int[n][n];
+		      int[][] rearrange = new int[n][n];
 		
 		 for(int i = 0; i< n; i++) {
 			
-			for(int j = 0; j< n; j++) {
+		     for(int j = 0; j< n; j++) {
 				
-			   rearrange[i][j] = (int)(Math.random()*20 + 1);
+			 rearrange[i][j] = (int)(Math.random()*20 + 1);
 				
-				  System.out.print(rearrange[i][j] + " " );				
+		            System.out.print(rearrange[i][j] + " " );				
 			       }
-			        System.out.println();
-		}
-		System.out.println("_____________");
+			       System.out.println();
+		                 }
+		                 System.out.println("_____________");
+		
 				
          for(int i = 0; i< n; i++) {
 			     	
-        	 random = (int)(Math.random()*(n-1));    //выбираем случайный номер столбца и меняем
+            random = (int)(Math.random()*(n-1));    //выбираем случайный номер столбца и меняем
         	 
-        	  temp = random;
+        	temp = random;
         	 
         	   random = i;
         	 
@@ -40,16 +41,16 @@ public class Task37 {
         	 
 			for(int j = 0; j< n; j++) {
 				                             				
-				System.out.print(rearrange[i][j] + " " );				
+			   System.out.print(rearrange[i][j] + " " );				
 			    }
 			     count ++;
 			 
-			      if(count > n-1) break;
+			        if(count > n-1) break;
 			
-			      System.out.println();
-		         }		
-	            }	
-               }
+			          System.out.println();
+		                }		
+	                    }	
+                        }
 //9 16 6 19 7 
 //17 7 17 11 9 
 //8 17 18 13 16 

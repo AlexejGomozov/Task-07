@@ -4,8 +4,8 @@ package by.htp.arraysofarrays.logic;
  *  составленная из чисел 1, 2, 3, ..., n2 так, что суммы по каждому столбцу,    numbers 1, 2, 3, ..., n2 so that the sums for each column, each row, and each of 
  *  каждой строке и каждой из двух больших диагоналей равны между собой.         the two large diagonals are equal to each other. Build such a square. Example of     
  *  Построить такой квадрат. Пример магического квадрата порядка 3: 618           a magic square of order 3:    618
- *       															753  										753
- *       															294 										294
+ *       							    753 					753  										
+ *       							    294 				        294 										294
   */
 
 public class Task40 {

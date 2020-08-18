@@ -5,9 +5,9 @@ package by.htp.arraysofarrays.logic;
  *  Построить результат сглаживания заданной матрицы                                               corresponding element of the original matrix. Build the result of smoothing 
  *                                                                                                  the specified matrix */
 
-public class Task36 {
+ public class Task36 {
 
-	public static void main(String[] args) {
+  public static void main(String[] args) {
 		
 		 int n =7;
 		
@@ -17,39 +17,37 @@ public class Task36 {
 		
 		 int[][] specifiedMatrix = new int[n][n];
 		
-		               for(int i = 0; i< matrix.length; i ++) {
+		                  for(int i = 0; i< matrix.length; i ++) {
 			
-			            for(int j = 0; j< matrix[i].length; j++) {
+			             for(int j = 0; j< matrix[i].length; j++) {
 				
-			             matrix[i][j] = (int)(Math.random()* 15 + 1);
+			                matrix[i][j] = (int)(Math.random()* 15 + 1);
 				
 				          System.out.print(matrix[i][j] + " ");
-			               }
-			               System.out.println();
-		                    }
-		                    System.out.println("_________________");
+			                    }
+			                     System.out.println();
+		                              }
+		                               System.out.println("_________________");
 		
         
-		for(int k = 0; k< n; k ++) {
+		      for(int k = 0; k< n; k ++) {
 			
 			for(int j = 0; j< n; j++) {
+						
+			   if(k == count & j == n-1) specifiedMatrix[k][j] = (matrix[k][j] +  matrix[k][j-1])/2;          //если краяний элемент справа, считается сумма крайней и предкрайней
 				
-				
-				if(k == count & j == n-1) specifiedMatrix[k][j] = (matrix[k][j] +  matrix[k][j-1])/2;          //если краяний элемент справа, считается сумма крайней и предкрайней
-				
-				if(k == count & j < n-1) { if (j == 0) specifiedMatrix[k][j] = (matrix[k][j] +  matrix[k][j+1])/2;    //все остальные элементы считаются сдесь, иф элемент нулевом месте считается так же как и крайие элементы
+			      if(k == count & j < n-1) { if (j == 0) specifiedMatrix[k][j] = (matrix[k][j] +  matrix[k][j+1])/2;    //все остальные элементы считаются сдесь, иф элемент нулевом месте считается так же как и крайие элементы
 				
 				else specifiedMatrix[k][j] = (matrix[k][j-1] +  matrix[k][j+1])/2;} 
-				
-        	
-				System.out.print(specifiedMatrix[k][j] + " ");
-			  }
-			count++;
-			
-		  System.out.println();
-		}
-	}	
-}
+					
+				  System.out.print(specifiedMatrix[k][j] + " ");
+			         }
+			      count++;
+			      
+		           System.out.println();
+		        }
+	            }	
+                 }
 //7 12 14 13 10 3 7 
 //12 14 10 4 13 8 7 
 //8 13 3 1 3 7 13 
